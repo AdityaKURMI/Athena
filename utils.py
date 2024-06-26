@@ -19,7 +19,7 @@ def get_model_response(file, query):
     data = text_splitter.split_text(context)
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     searcher = Chroma.from_texts(data, embeddings).as_retriever()
-    q="which employee has maximum salary?"
+    q = query
     records = searcher.get_relevant_documents(q)
     print(records)
 
