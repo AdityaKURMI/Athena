@@ -9,8 +9,8 @@ import os
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-genai.configure(api_key="AIzaSyCe1F-QHBHL_DB0P-RAqB166bKRreV9GnM")
-os.environ["GOOGLE_API_KEY"]="AIzaSyCe1F-QHBHL_DB0P-RAqB166bKRreV9GnM"
+genai.configure(api_key="")
+os.environ["GOOGLE_API_KEY"]=""
 
 
 def get_model_response(file, query):
